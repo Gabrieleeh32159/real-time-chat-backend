@@ -11,7 +11,7 @@ const app = Express()
 const server = createServer(app)
 const io = new Server(server, {
     cors: {
-        origin: process.env.NODE_ENV === 'production' ? undefined : "http://localhost:5173"
+        origin: process.env.NODE_ENV === 'production' ? "https://real-time-chat-production-2aff.up.railway.app" : "http://localhost:5173"
     }
 })
 
